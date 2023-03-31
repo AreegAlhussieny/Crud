@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+ 
+    <section class="product">
+        <div class="container">
+            <h1>Product</h1>
+
+            <label for="productName">product Name</label>
+            <input type="text" name=""   class="form-control mt-2" id="productName">
+
+
+            <label for="productPrice">product Price</label>
+            <input type="text" name="" class="form-control mt-2" id="productPrice">
+
+            <label for="productCategory">product Category</label>
+            <input type="text" name="" class="form-control mt-2" id="productCategory">
+
+            <label for="productDescription">product Description</label>
+            <input type="text" name="" class="form-control mt-2" id="productDescription">
+
+            <label for="count">product Count</label>
+            <input type="text" name="" class="form-control mt-2 w-25" 
+            id="count">
+
+       <button onclick="addProduct()" class="btn btn-info mt-4">Add Product</button>
+       <button onclick="deleteAll()" class="btn btn-danger mt-4"> Delete All  </button>
+       <button onclick="update()" class="btn btn-warning mt-4"> update </button>
+     
+       <input type="text" 
+       onkeyup="searchProduct(this.value)" class="form-control w-50 m-auto my-5"
+        name="" id="search">
+
+            <table class="table mt-5 text-center table-bordered" >
+                <thead class="bg-dark text-white">
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Category</th>
+                    <th>Product Description</th>
+                    <th>count</th>
+                    
+                    <th>Delete</th>
+                    <th>Edit</th>
+                    
+                </thead>
+                <tbody id="tBody">
+                   
+                    
+
+                </tbody>
+             
+                
+            </table>
+            <footer>
+                <label for="totalprice"> Total price</label>
+                <p id="tottal"></p>
+            
+
+             </footer>
+        </div>
+    </section>
+
+    <ul id="myUl"></ul>
+    <script src="js/main.js"></script>
+   
+</body>
+
+</html>
